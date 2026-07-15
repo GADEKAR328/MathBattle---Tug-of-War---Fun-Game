@@ -13,7 +13,9 @@
 </p>
 
 <p align="center">
-  <a href="https://gadekar328.github.io/MathBattle---Tug-of-War---Fun-Game/"><b>🚀 Play it Live</b></a>
+  <a href="https://gadekar328.github.io/MathBattle---Tug-of-War---Fun-Game/"><b>🚀 Play on GitHub Pages</b></a>
+  &nbsp;|&nbsp;
+  <a href="https://mathbattle.yogeshgadekar141.workers.dev/"><b>☁️ Play on Cloudflare</b></a>
 </p>
 
 ---
