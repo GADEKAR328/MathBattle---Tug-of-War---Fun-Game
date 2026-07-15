@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MathBattle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MathBattle - a fast tug-of-war math game. Designed & Developed by Yogesh Gadekar.">
+<meta name="theme-color" content="#2f6fed">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <div class="title">MathBattle</div>
+  <div class="subtitle">Solve fast, pull hard, win the rope</div>
+
+  <div class="scoreboard">
+    <div class="team-chip boys"><span id="chipName1">Team 1</span> <span class="score" id="score1">0</span></div>
+    <div class="team-chip girls"><span id="chipName2">Team 2</span> <span class="score" id="score2">0</span></div>
+  </div>
+
+  <div class="game-layout">
+
+    <div class="side-panel">
+      <div class="panel boys disabled" id="panel1">
+        <div class="panel-head" id="head1">TEAM 1</div>
+        <div class="question" id="q1">?</div>
+        <div class="display" id="disp1">&nbsp;</div>
+        <div class="keypad" id="pad1"></div>
+      </div>
+    </div>
+
+    <div class="arena-col">
+      <div class="arena">
+        <div class="arena-labels">
+          <span class="l1" id="goalLabel1">◀ TEAM 1 GOAL</span>
+          <span class="l2" id="goalLabel2">TEAM 2 GOAL ▶</span>
+        </div>
+        <div class="track" id="track">
+          <div class="zone-line"></div>
+          <div class="goal left"></div>
+          <div class="goal right"></div>
+          <div class="ground"></div>
+          <div class="rig" id="rig">
+            <img src="assets/rope-photo.png" alt="Kids playing tug of war" class="rope-photo" id="ropePhoto">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-panel">
+      <div class="panel girls disabled" id="panel2">
+        <div class="panel-head" id="head2">TEAM 2</div>
+        <div class="question" id="q2">?</div>
+        <div class="display" id="disp2">&nbsp;</div>
+        <div class="keypad" id="pad2"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="controls">
+    <button class="action" id="changeTeamsBtn">Change Teams</button>
+    <button class="action" id="restartBtn">Restart Game</button>
+    <button class="sound-toggle" id="soundBtn">🔊 Sound On</button>
+  </div>
+</div>
+
+<button class="install-btn" id="installBtn">⬇ Install App</button>
+
+<div class="login-overlay" id="loginOverlay">
+  <div class="login-card">
+    <div class="login-title">MathBattle</div>
+    <div class="login-sub">Welcome</div>
+    <p class="login-purpose">
+      This game was designed and built to encourage and inspire students to solve
+      math problems in a fun, engaging way — turning quick mental calculations into
+      a friendly team challenge that helps sharpen thinking speed and confidence with numbers.
+    </p>
+    <button type="button" class="login-btn" id="loginBtn">Continue</button>
+    <div class="credit-badge" style="margin-top:16px;">Designed &amp; Developed by <span class="name">Yogesh Gadekar</span></div>
+  </div>
+</div>
+
+<div class="overlay" id="startOverlay">
+  <div class="win-card">
+    <div class="win-trophy">🏆</div>
+    <div class="win-title">MathBattle</div>
+    <div class="win-sub" id="welcomeSub">Name your teams to begin</div>
+    <div class="name-form">
+      <div class="name-field b">
+        <label for="teamNameInput1">Team 1 name</label>
+        <input type="text" id="teamNameInput1" maxlength="16" placeholder="e.g. Boys" value="Boys">
+      </div>
+      <div class="name-field g">
+        <label for="teamNameInput2">Team 2 name</label>
+        <input type="text" id="teamNameInput2" maxlength="16" placeholder="e.g. Girls" value="Girls">
+      </div>
+    </div>
+    <button id="startBtn">Start Game</button>
+  </div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="win-card" id="winCard">
+    <div class="win-trophy" id="winTrophy">🏆</div>
+    <div class="win-title" id="winTitle">Team 1 Wins!</div>
+    <div class="win-sub" id="winSub">Great tug of war, everyone!</div>
+    <div class="win-score">
+      <span class="b" id="finalBoys">Team 1: 0</span>
+      <span class="g" id="finalGirls">Team 2: 0</span>
+    </div>
+    <button id="playAgainBtn">Play Again</button>
+  </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
