@@ -12,6 +12,10 @@
   <b>Designed & Developed by Yogesh Gadekar</b>
 </p>
 
+<p align="center">
+  <a href="https://gadekar328.github.io/MathBattle---Tug-of-War---Fun-Game/"><b>🚀 Play it Live</b></a>
+</p>
+
 ---
 
 ## 🎮 About the Project
