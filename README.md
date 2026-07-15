@@ -52,7 +52,7 @@ Then open the shown localhost URL in Chrome or Edge.
 1. Push this repo to GitHub.
 2. Go to **Settings → Pages**.
 3. Set source to the `main` branch, root folder.
-4. Your game will be live at `https://<username>.github.io/<repo-name>/`.
+4. Your game will be live at (https://gadekar328.github.io/MathBattle---Tug-of-War---Fun-Game/)
 
 ## License
 
